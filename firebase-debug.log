@@ -1,0 +1,34 @@
+[debug] [2020-04-17T11:15:05.366Z] ----------------------------------------------------------------------
+[debug] [2020-04-17T11:15:05.372Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\joecz\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-04-17T11:15:05.373Z] CLI Version:   8.0.3
+[debug] [2020-04-17T11:15:05.373Z] Platform:      win32
+[debug] [2020-04-17T11:15:05.373Z] Node Version:  v12.16.1
+[debug] [2020-04-17T11:15:05.377Z] Time:          Fri Apr 17 2020 13:15:05 GMT+0200 (Central European Summer Time)
+[debug] [2020-04-17T11:15:05.377Z] ----------------------------------------------------------------------
+[debug] [2020-04-17T11:15:05.378Z] 
+[debug] [2020-04-17T11:15:05.405Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-04-17T11:15:05.406Z] > authorizing via signed-in user
+[debug] [2020-04-17T11:15:05.407Z] [iam] checking project recoverydharmasite for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-04-17T11:15:05.415Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/recoverydharmasite:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-04-17T11:15:06.362Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 17 Apr 2020 11:15:05 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=760","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-04-17T11:15:06.366Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/recoverydharmasite  
+ 
+[debug] [2020-04-17T11:15:06.673Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 17 Apr 2020 11:15:06 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'recoverydharmasite'...
+[info] 
+[info] i  deploying hosting
+[debug] [2020-04-17T11:15:06.708Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/recoverydharmasite/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2020-04-17T11:15:08.306Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 17 Apr 2020 11:15:07 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[recoverydharmasite]: beginning deploy...
+[info] i  hosting[recoverydharmasite]: found 1 files in dist
+[debug] [2020-04-17T11:15:08.342Z] [hosting] hash cache [ZGlzdA] not populated
+[debug] [2020-04-17T11:15:08.365Z] [hosting] hash cache [ZGlzdA] stored for 1 files
+[debug] [2020-04-17T11:15:08.366Z] [hosting][hash queue][FINAL] {"max":16,"min":16,"avg":16,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":23}
+[debug] [2020-04-17T11:15:08.366Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/recoverydharmasite/versions/bf40c462dc6389ab:populateFiles  
+ <request body omitted>
+[debug] [2020-04-17T11:15:09.534Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 17 Apr 2020 11:15:09 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"quic=\":443\"; ma=2592000; v=\"46,43\",h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-04-17T11:15:09.539Z] [hosting][populate queue][FINAL] {"max":1175,"min":1175,"avg":1175,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1179}
+[debug] [2020-04-17T11:15:09.539Z] [hosting] uploads queued: 1
